@@ -31,7 +31,7 @@
 // require foundation.tooltip.js
 // require foundation.zf.responsiveAccordionTabs.js
 
-// require slick.min.js
+//=require slick.min.js
 //
 // Google Map ACF functions
 // require components/map.js
@@ -45,12 +45,13 @@
 	// $( 'iframe[src*="vimeo.com"]').wrap("<div class='flex-video widescreen vimeo'/>");
 
 	$(document).ready(function() {
-		//var $slider = $('.ba-slider');
+		var $ipadSlider = $('.fr-ipad-slider');
 
-		// $slider.slick({
-		// 	dots: true,
-		// 	infinite: false
-		// });
+		$ipadSlider.slick({
+			dots: true,
+			infinite: false,
+			arrows: false
+		});
 	});
 
 	$(window).load(function() {

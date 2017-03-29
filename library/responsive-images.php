@@ -7,6 +7,10 @@
  * @since FoundationPress 2.6.0
  */
 
+add_image_size( 'fr-ipad-slider', 535, 729, true );
+add_image_size( 'fr-screenshot', 600, 340, true );
+
+
 // Add additional image sizes
 add_image_size( 'fp-small', 640 );
 add_image_size( 'fp-medium', 1024 );

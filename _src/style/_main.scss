@@ -22,3 +22,52 @@ button{
 	text-transform: uppercase;
 	color: #FFF;
 }
+.main-content{
+	padding: 40px 0;
+}
+
+.ba-intro{
+	padding: 382px 0 420px;
+	text-align: center;
+	position: relative;
+	background: url("../img/home-intro-bg.jpg") #333 50% 0 no-repeat;
+	&__subtitle{
+		color:  $primary-color;
+		font-size: 25px;
+		font-weight: 600;
+	}
+	&__body{
+		position: relative;
+		z-index: 1;
+	}
+	&:before{
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		position: absolute;
+		content: "";
+		background: rgba(0,0,0,.7);
+		z-index: 0;
+	}
+
+	&--our-games{
+		padding: 0;
+		min-height: 100vh;
+		&:before{
+			background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 43%);
+			background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 43%);
+			background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 43%);
+		}
+	}
+	&__logo{
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		z-index: 1;
+		transform: translate(-50%, 0);
+		@include breakpoint(large){
+			transform: translate(-50%, 123px);
+		}
+	}
+}

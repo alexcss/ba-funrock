@@ -1,28 +1,4 @@
-.ba-intro{
-	padding: 382px 0 420px;
-	text-align: center;
-	position: relative;
-	background: url("../img/home-intro-bg.jpg") #333 50% 0 no-repeat;
-	&__subtitle{
-		color:  $primary-color;
-		font-size: 25px;
-		font-weight: 600;
-	}
-	&__body{
-		position: relative;
-		z-index: 1;
-	}
-	&:before{
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		position: absolute;
-		content: "";
-		background: rgba(0,0,0,.7);
-		z-index: 0;
-	}
-}
+
 .ba-intro-rows{
 	background-color:  #ffffff;
 	box-shadow: 0px 0px 59px 0px rgba(0, 0, 0, 0.23);
