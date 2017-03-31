@@ -1,0 +1,42 @@
+.ba-screenshot{
+	display: block;
+	position: relative;
+	margin-bottom: 30px;
+	img{
+		display: block;
+	}
+	&:before, &:after{
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		top: 0;
+		opacity: 0;
+		transition: opacity .3s;
+	}
+	&:before{
+		background: rgba(#000, 0.6);
+		border: 6px solid $primary-color;
+	}
+	&:after{
+		content: attr(data-button);
+		max-width: 180px;
+		text-align: center;
+		background: $primary-color;
+		height: 44px;
+		line-height: 44px;
+		color: #FFF;
+		font-family: $header-font-family;
+		color:  $black;
+		font-size: 13px;
+		font-weight: 600;
+		text-transform: uppercase;
+		margin: auto;
+	}
+	&:hover{
+		&:before, &:after{
+			opacity: 1;
+		}
+	}
+}
