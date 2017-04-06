@@ -10,7 +10,17 @@ a,
 button{
 	@include ba-transition;
 }
-
+p{
+	letter-spacing: 0.02em;
+}
+.button{
+	text-transform: uppercase;
+	font-weight: $header-font-weight;
+	font-family: $header-font-family;
+}
+h1,h2,h3,h4,h5,h6{
+	margin-bottom: 1.3rem;
+}
 .site-header{
 	position: absolute;
 	left: 0;
@@ -21,16 +31,32 @@ button{
 .ba-page-title{
 	text-transform: uppercase;
 	color: #FFF;
+	@include breakpoint(medium){
+		font-size: 70px;
+		max-width: 800px;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 .main-content{
 	padding: 40px 0;
 }
 
 .ba-intro{
-	padding: 382px 0 420px;
+	padding: 140px 0 80px;
+	@include breakpoint(medium){
+		padding: 280px 0;
+	}
+
 	text-align: center;
 	position: relative;
 	background: url("../img/home-intro-bg.jpg") #333 50% 0 no-repeat;
+	background-size: cover;
+
+	&--home{
+		padding: 382px 0 420px;
+		background-size: initial;
+	}
 	&__subtitle{
 		color:  $primary-color;
 		font-size: 25px;
@@ -70,4 +96,8 @@ button{
 			transform: translate(-50%, 123px);
 		}
 	}
+}
+
+.ba-job{
+	margin-bottom: 40px;
 }

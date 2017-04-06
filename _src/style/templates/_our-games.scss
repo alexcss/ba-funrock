@@ -1,3 +1,9 @@
+.fr-main-our-games{
+	padding: 40px 0;
+	@include breakpoint(large){
+		padding: 280px 0 70px;
+	}
+}
 .ba-screenshot{
 	display: block;
 	position: relative;
@@ -39,4 +45,55 @@
 			opacity: 1;
 		}
 	}
+}
+
+.fr-ipad{
+	position: relative;
+	z-index: 2;
+	box-shadow: -5px 0 20px rgba(#000, .5);
+	border-radius: 30px;
+	margin-bottom: 30px;
+	&__footer-text{
+		position: relative;
+		z-index: 2;
+	}
+	@include breakpoint(medium){
+		&, &__footer-text{
+			margin-right: 20px;
+		}
+	}
+}
+.fr-ipad-slider{
+	position: absolute;
+	left: 5%;
+	right: 5%;
+	top: 7%;
+}
+.ba-screnshots-section {
+	padding-top: 70px;
+}
+
+.fr-features {
+	margin-top: 50px;
+	padding: 26px 0 44px;
+	position: relative;
+	z-index: 0;
+	&:before{
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: -20px;
+		background: #ffba00;
+		z-index: -1;
+		width: 102vw;
+		transform: skewY(1deg);
+		@include breakpoint(medium){
+			left: -52vw;
+		}
+	}
+}
+.fr-trailer-button {
+	margin-top: 20px;
 }

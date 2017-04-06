@@ -25,7 +25,7 @@ if ( ! function_exists( 'foundationpress_scripts' ) ) :
 	// It's a good idea to do this, performance-wise. No need to load everything if you're just going to use the grid anyway, you know :)
 
 	// Map Scripts
-	// wp_enqueue_script( 'google.maps.api', 'https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY', null, null, true );
+	wp_enqueue_script( 'google.maps.api', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyAWUAylw7Ik3rxfsLs_O3OoAP378M2crvM', null, null, true );
 
 	wp_enqueue_script( 'foundation', get_template_directory_uri() . '/assets/js/app.js', array('jquery'), '2.6.1', true );
 

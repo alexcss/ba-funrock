@@ -8,7 +8,7 @@ get_header(); ?>
 <?php
 	$bgImage = get_field('background_image');
 ?>
-<section class="ba-intro" style="background-image: url(<?php echo $bgImage['url'] ?>)">
+<section class="ba-intro ba-intro--home" style="background-image: url(<?php echo $bgImage['url'] ?>)">
 	<!-- BEGIN row column  -->
 	<div class="row column ba-intro__body">
 		<?php
@@ -32,6 +32,7 @@ get_header(); ?>
 				<div class="ba-home-games">
 					<!-- BEGIN   -->
 					<?php $image = get_field('games_image'); ?>
+
 					<div class="ba-home-games__image" style="background-image: url(<?php echo $image['url'] ?>)">
 						<img src="<?php echo $image['url'] ?>" alt="<?php the_field('games_title'); ?>">
 					</div>

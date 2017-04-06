@@ -34,7 +34,7 @@
 //=require slick.min.js
 //
 // Google Map ACF functions
-// require components/map.js
+//=require components/map.js
 
 ;
 (function($) {
@@ -48,7 +48,7 @@
 		var $ipadSlider = $('.fr-ipad-slider');
 
 		$ipadSlider.slick({
-			dots: true,
+			dots: false,
 			infinite: false,
 			arrows: false
 		});
