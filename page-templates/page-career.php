@@ -16,7 +16,7 @@ get_header(); ?>
     <div class="column medium-8">
         <h3>AVAILABLE POSITIONS:</h3>
 		<?php
-		$paged = ( get_query_var('page') ) ? get_query_var('page') : 1;
+		$paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
 		$careerArgs = array(
 			'post_type'=>'job',
 			'posts_per_page'=>2,
